@@ -1,0 +1,1 @@
+var l=(e=>(e[e.Open=0]="Open",e[e.Closed=1]="Closed",e))(l||{}),n=(e=>(e[e.Open=0]="Open",e[e.Closed=1]="Closed",e))(n||{}),i=(e=>(e[e.Single=0]="Single",e[e.Multi=1]="Multi",e))(i||{}),t=(e=>(e[e.Pointer=0]="Pointer",e[e.Other=1]="Other",e))(t||{});

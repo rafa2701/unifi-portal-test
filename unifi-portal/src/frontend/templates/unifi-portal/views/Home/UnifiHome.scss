@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "@root/assets/theme/base/_variables" as *;
+
+.unifi-home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: map.get($spacing, "lg");
+
+  .welcome-section {
+    text-align: center;
+    margin-bottom: map.get($spacing, "2xl");
+
+    .welcome-logo {
+      height: 72px;
+      margin: 0 auto map.get($spacing, "lg");
+    }
+
+    h1 {
+      font-size: map.get($font-size, "3xl");
+      font-weight: 700;
+      color: map.get($colors, "slate", 900);
+      margin-bottom: map.get($spacing, "md");
+    }
+
+    .welcome-subtitle {
+      font-size: map.get($font-size, "lg");
+      color: map.get($colors, "slate", 600);
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .selection-section {
+    margin-bottom: map.get($spacing, "xl");
+    animation: fadeIn 0.5s ease-in-out;
+
+    .selection-form {
+      display: flex;
+      flex-direction: column;
+      gap: map.get($spacing, "xl");
+      padding: map.get($spacing, "lg");
+    }
+  }
+
+  .action-section {
+    display: flex;
+    justify-content: center;
+    margin-top: map.get($spacing, "xl");
+    animation: fadeIn 0.5s ease-in-out 0.2s both;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,502 @@
+@use "sass:map";
+@use "@root/assets/theme/base/_variables" as *;
+
+.modern-report {
+  font-family: map.get($font-family, "sans");
+  line-height: 1.5;
+  color: map.get($colors, "slate", 800);
+  font-size: 14px;
+
+  .container {
+    max-width: 210mm;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid map.get($colors, "blue", 400);
+    position: relative;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .logo {
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+  }
+
+  .logo-text {
+    font-size: 26px;
+    font-weight: 700;
+    color: map.get($colors, "blue", 500);
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 0 0 8px 0;
+    color: map.get($colors, "blue", 600);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: map.get($colors, "blue", 600);
+    margin-top: 36px;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid map.get($colors, "slate", 200);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: map.get($colors, "slate", 800);
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: map.get($colors, "slate", 700);
+  }
+
+  .info-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px 24px -8px;
+  }
+
+  .info-item {
+    flex: 1;
+    min-width: 210px;
+    background-color: map.get($colors, "slate", 50);
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    border: 1px solid map.get($colors, "slate", 200);
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .info-label {
+    font-size: 13px;
+    color: map.get($colors, "slate", 500);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .info-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: map.get($colors, "slate", 800);
+  }
+
+  .metric {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid map.get($colors, "slate", 200);
+    font-size: 14px;
+  }
+
+  .metric-label {
+    color: map.get($colors, "slate", 600);
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .metric-value {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+    font-size: 13px;
+  }
+
+  .table th,
+  .table td {
+    border: 1px solid map.get($colors, "slate", 200);
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  .table th {
+    background-color: map.get($colors, "slate", 100);
+    font-weight: 600;
+    color: map.get($colors, "slate", 700);
+    font-size: 13px;
+    padding: 12px;
+  }
+
+  .table tr:nth-child(even) {
+    background-color: map.get($colors, "slate", 50);
+  }
+
+  .table tr:hover {
+    background-color: map.get($colors, "blue", 50);
+  }
+
+  .alert {
+    background-color: #fff8f8;
+    color: map.get($colors, "accent", "error");
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border-left: 4px solid map.get($colors, "accent", "error");
+    box-shadow: 0 2px 8px rgba(map.get($colors, "accent", "error"), 0.1);
+  }
+
+  .alert-item {
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(map.get($colors, "accent", "error"), 0.2);
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+  }
+
+  .alert-title {
+    font-weight: 600;
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .alert-time {
+    font-size: 12px;
+    color: map.get($colors, "slate", 500);
+  }
+
+  .footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid map.get($colors, "slate", 200);
+    font-size: 12px;
+    color: map.get($colors, "slate", 500);
+    text-align: center;
+  }
+
+  .status-ok {
+    color: map.get($colors, "accent", "success");
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: map.get($colors, "accent", "success");
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .status-warning {
+    color: map.get($colors, "accent", "warning");
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: map.get($colors, "accent", "warning");
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .status-error {
+    color: map.get($colors, "accent", "error");
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: map.get($colors, "accent", "error");
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+  }
+
+  .progress-bar {
+    width: 100%;
+    background-color: map.get($colors, "slate", 200);
+    border-radius: 50px;
+    height: 8px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 50px;
+    background-color: map.get($colors, "blue", 500);
+    transition: width 0.5s ease;
+
+    &.warning {
+      background-color: map.get($colors, "accent", "warning");
+    }
+
+    &.danger {
+      background-color: map.get($colors, "accent", "error");
+    }
+  }
+
+  .network-stats {
+    display: flex;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .stat-item {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 16px;
+    background-color: map.get($colors, "slate", 50);
+    border-radius: 8px;
+    margin: 6px;
+    border: 1px solid map.get($colors, "slate", 200);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .stat-value {
+    font-size: 22px;
+    font-weight: 700;
+    color: map.get($colors, "blue", 500);
+    margin-bottom: 6px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: map.get($colors, "slate", 500);
+    font-weight: 500;
+  }
+
+  .chart {
+    min-height: 240px;
+    background-color: map.get($colors, "slate", 50);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid map.get($colors, "slate", 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  }
+
+  .chart-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: map.get($colors, "slate", 800);
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  .tag-success {
+    background-color: rgba(map.get($colors, "accent", "success"), 0.1);
+    color: map.get($colors, "accent", "success");
+  }
+
+  .tag-warning {
+    background-color: rgba(map.get($colors, "accent", "warning"), 0.1);
+    color: map.get($colors, "accent", "warning");
+  }
+
+  .tag-danger {
+    background-color: rgba(map.get($colors, "accent", "error"), 0.1);
+    color: map.get($colors, "accent", "error");
+  }
+
+  .action-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    gap: 12px;
+    z-index: 100;
+  }
+
+  .action-button {
+    background-color: map.get($colors, "blue", 500);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(map.get($colors, "blue", 500), 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+
+    svg {
+      margin-right: 8px;
+      width: 18px;
+      height: 18px;
+    }
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(map.get($colors, "blue", 500), 0.4);
+    }
+
+    &.back-button {
+      background-color: map.get($colors, "slate", 600);
+      box-shadow: 0 4px 12px rgba(map.get($colors, "slate", 600), 0.3);
+
+      &:hover {
+        background-color: map.get($colors, "slate", 700);
+        box-shadow: 0 6px 16px rgba(map.get($colors, "slate", 700), 0.4);
+      }
+    }
+
+    &.save-button {
+      background-color: map.get($colors, "accent", "success");
+      box-shadow: 0 4px 12px rgba(map.get($colors, "accent", "success"), 0.3);
+
+      &:hover {
+        box-shadow: 0 6px 16px rgba(map.get($colors, "accent", "success"), 0.4);
+      }
+    }
+
+    &:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: translateY(0);
+    }
+  }
+}
+
+// Better page breaks for PDF
+.page-break-before {
+  page-break-before: always;
+}
+
+.page-break-after {
+  page-break-after: always;
+}
+
+.page-break-avoid {
+  page-break-inside: avoid;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .modern-report {
+    font-size: 12px !important;
+
+    .container {
+      box-shadow: none !important;
+      margin: 0 !important;
+      max-width: none !important;
+      padding: 0 !important;
+    }
+
+    h1 {
+      font-size: 22px !important;
+    }
+    h2 {
+      font-size: 18px !important;
+    }
+    h3 {
+      font-size: 14px !important;
+    }
+
+    .info-item {
+      break-inside: avoid;
+    }
+
+    table {
+      break-inside: auto;
+    }
+
+    tr {
+      break-inside: avoid;
+      break-after: auto;
+    }
+
+    .header {
+      break-after: avoid;
+    }
+
+    h1,
+    h2,
+    h3 {
+      break-after: avoid;
+    }
+
+    .chart,
+    .info-box,
+    .network-stats {
+      break-inside: avoid;
+    }
+  }
+}

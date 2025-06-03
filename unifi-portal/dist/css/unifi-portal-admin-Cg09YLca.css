@@ -1,0 +1,1 @@
+.unifi-portal{min-height:100vh;display:flex;flex-direction:column}.portal-layout{flex:1;display:flex}.portal-layout .portal-sidebar{width:20rem;border-right:1px solid #e2e8f0;background:#fff}.portal-layout .portal-main{flex:1;padding:1.5rem;background:#f8fafc}.fade-enter-active,.fade-leave-active{transition:opacity .15s ease}.fade-enter-from,.fade-leave-to{opacity:0}

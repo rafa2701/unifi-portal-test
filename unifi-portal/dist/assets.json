@@ -1,0 +1,479 @@
+{
+  "_BaseCard-CT8UykvB.js": {
+    "file": "js/BaseCard-CT8UykvB.js",
+    "name": "BaseCard",
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ],
+    "css": [
+      "css/BaseCard-u5B5UTzE.css"
+    ]
+  },
+  "_BaseCard-DvmHTm7A.js": {
+    "file": "js/BaseCard-DvmHTm7A.js",
+    "name": "BaseCard",
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ],
+    "css": [
+      "css/BaseCard-u5B5UTzE.css"
+    ]
+  },
+  "_BaseCard-u5B5UTzE.css": {
+    "file": "css/BaseCard-u5B5UTzE.css",
+    "src": "_BaseCard-u5B5UTzE.css"
+  },
+  "_BaseSelect-C87ki-sB.js": {
+    "file": "js/BaseSelect-C87ki-sB.js",
+    "name": "BaseSelect",
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js"
+    ],
+    "css": [
+      "css/BaseSelect-C99n_JMd.css"
+    ]
+  },
+  "_BaseSelect-C99n_JMd.css": {
+    "file": "css/BaseSelect-C99n_JMd.css",
+    "src": "_BaseSelect-C99n_JMd.css"
+  },
+  "_BaseSelect-CHtD1inW.js": {
+    "file": "js/BaseSelect-CHtD1inW.js",
+    "name": "BaseSelect",
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js"
+    ],
+    "css": [
+      "css/BaseSelect-C99n_JMd.css"
+    ]
+  },
+  "_main-DE9f1_IK.js": {
+    "file": "js/main-DE9f1_IK.js",
+    "name": "main",
+    "css": [
+      "css/main-DtMGVECO.css"
+    ]
+  },
+  "_main-DtMGVECO.css": {
+    "file": "css/main-DtMGVECO.css",
+    "src": "_main-DtMGVECO.css"
+  },
+  "_unifi-vendor-@babel-BgpAVVkQ.js": {
+    "file": "js/unifi-vendor-@babel-BgpAVVkQ.js",
+    "name": "unifi-vendor-@babel"
+  },
+  "_unifi-vendor-@headlessui-Ci_pjopT.js": {
+    "file": "js/unifi-vendor-@headlessui-Ci_pjopT.js",
+    "name": "unifi-vendor-@headlessui"
+  },
+  "_unifi-vendor-@orchidjs-BHPRxGz6.js": {
+    "file": "js/unifi-vendor-@orchidjs-BHPRxGz6.js",
+    "name": "unifi-vendor-@orchidjs"
+  },
+  "_unifi-vendor-@tanstack-l0sNRNKZ.js": {
+    "file": "js/unifi-vendor-@tanstack-l0sNRNKZ.js",
+    "name": "unifi-vendor-@tanstack"
+  },
+  "_unifi-vendor-@vue-BH5BUbdD.js": {
+    "file": "js/unifi-vendor-@vue-BH5BUbdD.js",
+    "name": "unifi-vendor-@vue"
+  },
+  "_unifi-vendor-@vueuse-C3CZYosC.js": {
+    "file": "js/unifi-vendor-@vueuse-C3CZYosC.js",
+    "name": "unifi-vendor-@vueuse",
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-focus-trap-DefuGMzh.js"
+    ]
+  },
+  "_unifi-vendor-axios-l0sNRNKZ.js": {
+    "file": "js/unifi-vendor-axios-l0sNRNKZ.js",
+    "name": "unifi-vendor-axios"
+  },
+  "_unifi-vendor-core-js-Fli6k-j9.js": {
+    "file": "js/unifi-vendor-core-js-Fli6k-j9.js",
+    "name": "unifi-vendor-core-js"
+  },
+  "_unifi-vendor-fflate-DkrNj-7V.js": {
+    "file": "js/unifi-vendor-fflate-DkrNj-7V.js",
+    "name": "unifi-vendor-fflate"
+  },
+  "_unifi-vendor-focus-trap-DefuGMzh.js": {
+    "file": "js/unifi-vendor-focus-trap-DefuGMzh.js",
+    "name": "unifi-vendor-focus-trap",
+    "imports": [
+      "_unifi-vendor-tabbable-lu-oW8fi.js"
+    ]
+  },
+  "_unifi-vendor-html2canvas-S0bfYxZu.js": {
+    "file": "js/unifi-vendor-html2canvas-S0bfYxZu.js",
+    "name": "unifi-vendor-html2canvas",
+    "isDynamicEntry": true
+  },
+  "_unifi-vendor-html2pdf.js-DddM_0kN.js": {
+    "file": "js/unifi-vendor-html2pdf.js-DddM_0kN.js",
+    "name": "unifi-vendor-html2pdf.js",
+    "imports": [
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-jspdf-CB9eJ5jE.js",
+      "_unifi-vendor-html2canvas-S0bfYxZu.js"
+    ]
+  },
+  "_unifi-vendor-jspdf-CB9eJ5jE.js": {
+    "file": "js/unifi-vendor-jspdf-CB9eJ5jE.js",
+    "name": "unifi-vendor-jspdf",
+    "imports": [
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-fflate-DkrNj-7V.js"
+    ],
+    "dynamicImports": [
+      "_unifi-vendor-html2canvas-S0bfYxZu.js",
+      "node_modules/dompurify/dist/purify.es.js",
+      "node_modules/canvg/lib/index.es.js"
+    ]
+  },
+  "_unifi-vendor-lucide-vue-next-KuQULOd8.js": {
+    "file": "js/unifi-vendor-lucide-vue-next-KuQULOd8.js",
+    "name": "unifi-vendor-lucide-vue-next",
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ]
+  },
+  "_unifi-vendor-performance-now-B4ZTSGt1.js": {
+    "file": "js/unifi-vendor-performance-now-B4ZTSGt1.js",
+    "name": "unifi-vendor-performance-now"
+  },
+  "_unifi-vendor-pinia-DpOm-O93.js": {
+    "file": "js/unifi-vendor-pinia-DpOm-O93.js",
+    "name": "unifi-vendor-pinia",
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ]
+  },
+  "_unifi-vendor-raf-DsemKl_5.js": {
+    "file": "js/unifi-vendor-raf-DsemKl_5.js",
+    "name": "unifi-vendor-raf",
+    "imports": [
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-performance-now-B4ZTSGt1.js"
+    ]
+  },
+  "_unifi-vendor-rgbcolor-Drum4Zbb.js": {
+    "file": "js/unifi-vendor-rgbcolor-Drum4Zbb.js",
+    "name": "unifi-vendor-rgbcolor",
+    "imports": [
+      "_unifi-vendor-core-js-Fli6k-j9.js"
+    ]
+  },
+  "_unifi-vendor-stackblur-canvas-CBjRDurV.js": {
+    "file": "js/unifi-vendor-stackblur-canvas-CBjRDurV.js",
+    "name": "unifi-vendor-stackblur-canvas"
+  },
+  "_unifi-vendor-svg-pathdata-CY6dJu8S.js": {
+    "file": "js/unifi-vendor-svg-pathdata-CY6dJu8S.js",
+    "name": "unifi-vendor-svg-pathdata"
+  },
+  "_unifi-vendor-tabbable-lu-oW8fi.js": {
+    "file": "js/unifi-vendor-tabbable-lu-oW8fi.js",
+    "name": "unifi-vendor-tabbable"
+  },
+  "_unifi-vendor-tom-select-DQKaNtan.css": {
+    "file": "css/unifi-vendor-tom-select-DQKaNtan.css",
+    "src": "_unifi-vendor-tom-select-DQKaNtan.css"
+  },
+  "_unifi-vendor-tom-select-Dbt2A7YI.js": {
+    "file": "js/unifi-vendor-tom-select-Dbt2A7YI.js",
+    "name": "unifi-vendor-tom-select",
+    "imports": [
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js"
+    ],
+    "css": [
+      "css/unifi-vendor-tom-select-DQKaNtan.css"
+    ]
+  },
+  "_unifi-vendor-vue-demi-l0sNRNKZ.js": {
+    "file": "js/unifi-vendor-vue-demi-l0sNRNKZ.js",
+    "name": "unifi-vendor-vue-demi"
+  },
+  "_unifi-vendor-vue-final-modal-BHQnw4HA.js": {
+    "file": "js/unifi-vendor-vue-final-modal-BHQnw4HA.js",
+    "name": "unifi-vendor-vue-final-modal",
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-@vueuse-C3CZYosC.js"
+    ]
+  },
+  "_unifi-vendor-vue-l0sNRNKZ.js": {
+    "file": "js/unifi-vendor-vue-l0sNRNKZ.js",
+    "name": "unifi-vendor-vue"
+  },
+  "_unifi-vendor-vue-router-GxXeWd4k.js": {
+    "file": "js/unifi-vendor-vue-router-GxXeWd4k.js",
+    "name": "unifi-vendor-vue-router",
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ]
+  },
+  "node_modules/canvg/lib/index.es.js": {
+    "file": "js/unifi-vendor-canvg-Cs-wLp4w.js",
+    "name": "unifi-vendor-canvg",
+    "src": "node_modules/canvg/lib/index.es.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-raf-DsemKl_5.js",
+      "_unifi-vendor-rgbcolor-Drum4Zbb.js",
+      "_unifi-vendor-svg-pathdata-CY6dJu8S.js",
+      "_unifi-vendor-stackblur-canvas-CBjRDurV.js",
+      "_unifi-vendor-performance-now-B4ZTSGt1.js"
+    ]
+  },
+  "node_modules/dompurify/dist/purify.es.js": {
+    "file": "js/unifi-vendor-dompurify-BtiL3Rle.js",
+    "name": "unifi-vendor-dompurify",
+    "src": "node_modules/dompurify/dist/purify.es.js",
+    "isDynamicEntry": true
+  },
+  "src/admin/templates/unifi-portal/unifi-portal.js": {
+    "file": "js/unifi-portal-admin-B-CG5YkP.js",
+    "name": "unifi-portal-admin",
+    "src": "src/admin/templates/unifi-portal/unifi-portal.js",
+    "isEntry": true,
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-pinia-DpOm-O93.js",
+      "_unifi-vendor-vue-router-GxXeWd4k.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-jspdf-CB9eJ5jE.js",
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-fflate-DkrNj-7V.js"
+    ],
+    "dynamicImports": [
+      "src/admin/templates/unifi-portal/views/AdminView.vue",
+      "src/admin/templates/unifi-portal/views/HomeView.vue",
+      "src/admin/templates/unifi-portal/views/ControllerView.vue",
+      "src/admin/templates/unifi-portal/views/DocsView.vue",
+      "src/admin/templates/unifi-portal/views/TestView.vue",
+      "src/admin/templates/unifi-portal/views/SettingsView.vue"
+    ],
+    "css": [
+      "css/unifi-portal-admin-Cg09YLca.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/AdminView.vue": {
+    "file": "js/AdminView-DBPTknQR.js",
+    "name": "AdminView",
+    "src": "src/admin/templates/unifi-portal/views/AdminView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-vue-router-GxXeWd4k.js"
+    ],
+    "css": [
+      "css/AdminView-CX9GkL9O.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/ControllerView.vue": {
+    "file": "js/ControllerView-BXufbcdd.js",
+    "name": "ControllerView",
+    "src": "src/admin/templates/unifi-portal/views/ControllerView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseCard-CT8UykvB.js",
+      "_BaseCard-DvmHTm7A.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ],
+    "css": [
+      "css/ControllerView-BmsbnkMV.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/DocsView.vue": {
+    "file": "js/DocsView-DV9jsapb.js",
+    "name": "DocsView",
+    "src": "src/admin/templates/unifi-portal/views/DocsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseCard-CT8UykvB.js",
+      "_BaseCard-DvmHTm7A.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ],
+    "css": [
+      "css/DocsView-5BPtOmQL.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/HomeView.vue": {
+    "file": "js/HomeView-BWFQRTyj.js",
+    "name": "HomeView",
+    "src": "src/admin/templates/unifi-portal/views/HomeView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseCard-CT8UykvB.js",
+      "_BaseCard-DvmHTm7A.js",
+      "_unifi-vendor-vue-router-GxXeWd4k.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js"
+    ],
+    "css": [
+      "css/HomeView-BMmp5J0X.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/SettingsView.vue": {
+    "file": "js/SettingsView-DoRIWqYd.js",
+    "name": "SettingsView",
+    "src": "src/admin/templates/unifi-portal/views/SettingsView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseSelect-CHtD1inW.js",
+      "_BaseCard-CT8UykvB.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_BaseCard-DvmHTm7A.js",
+      "_BaseSelect-C87ki-sB.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js",
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js"
+    ],
+    "css": [
+      "css/SettingsView-CSkLLQJz.css"
+    ]
+  },
+  "src/admin/templates/unifi-portal/views/TestView.vue": {
+    "file": "js/TestView-DiwYpfc9.js",
+    "name": "TestView",
+    "src": "src/admin/templates/unifi-portal/views/TestView.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_BaseCard-CT8UykvB.js",
+      "_BaseSelect-CHtD1inW.js",
+      "_BaseCard-DvmHTm7A.js",
+      "_BaseSelect-C87ki-sB.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js",
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js"
+    ],
+    "css": [
+      "css/TestView-CuRm8Ely.css"
+    ]
+  },
+  "src/frontend/templates/unifi-portal/unifi-portal.js": {
+    "file": "js/unifi-portal-frontend-txh2-Thw.js",
+    "name": "unifi-portal-frontend",
+    "src": "src/frontend/templates/unifi-portal/unifi-portal.js",
+    "isEntry": true,
+    "imports": [
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-pinia-DpOm-O93.js",
+      "_unifi-vendor-vue-router-GxXeWd4k.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-jspdf-CB9eJ5jE.js",
+      "_BaseSelect-CHtD1inW.js",
+      "_BaseCard-CT8UykvB.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-vue-final-modal-BHQnw4HA.js",
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-fflate-DkrNj-7V.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js",
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js",
+      "_unifi-vendor-@vueuse-C3CZYosC.js",
+      "_unifi-vendor-focus-trap-DefuGMzh.js",
+      "_unifi-vendor-tabbable-lu-oW8fi.js"
+    ],
+    "dynamicImports": [
+      "src/frontend/templates/unifi-portal/views/Reports/ReportLayout.vue",
+      "src/frontend/templates/unifi-portal/views/Reports/Modern/ModernReport.vue",
+      "src/frontend/templates/unifi-portal/views/Reports/Legacy/LegacyReport.vue"
+    ],
+    "css": [
+      "css/unifi-portal-frontend-DVNPFM3J.css"
+    ]
+  },
+  "src/frontend/templates/unifi-portal/views/Reports/Legacy/LegacyReport.vue": {
+    "file": "js/LegacyReport-CtAL9Giz.js",
+    "name": "LegacyReport",
+    "src": "src/frontend/templates/unifi-portal/views/Reports/Legacy/LegacyReport.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_main-DE9f1_IK.js"
+    ]
+  },
+  "src/frontend/templates/unifi-portal/views/Reports/Modern/ModernReport.vue": {
+    "file": "js/ModernReport-CwLrWpgv.js",
+    "name": "ModernReport",
+    "src": "src/frontend/templates/unifi-portal/views/Reports/Modern/ModernReport.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "src/frontend/templates/unifi-portal/unifi-portal.js",
+      "_unifi-vendor-vue-router-GxXeWd4k.js",
+      "_unifi-vendor-html2pdf.js-DddM_0kN.js",
+      "_unifi-vendor-pinia-DpOm-O93.js",
+      "_unifi-vendor-jspdf-CB9eJ5jE.js",
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-fflate-DkrNj-7V.js",
+      "_BaseSelect-CHtD1inW.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js",
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js",
+      "_BaseCard-CT8UykvB.js",
+      "_unifi-vendor-vue-final-modal-BHQnw4HA.js",
+      "_unifi-vendor-@vueuse-C3CZYosC.js",
+      "_unifi-vendor-focus-trap-DefuGMzh.js",
+      "_unifi-vendor-tabbable-lu-oW8fi.js",
+      "_unifi-vendor-html2canvas-S0bfYxZu.js"
+    ],
+    "css": [
+      "css/ModernReport-s3SzpQGk.css"
+    ]
+  },
+  "src/frontend/templates/unifi-portal/views/Reports/ReportLayout.vue": {
+    "file": "js/ReportLayout-DeeboIHF.js",
+    "name": "ReportLayout",
+    "src": "src/frontend/templates/unifi-portal/views/Reports/ReportLayout.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_unifi-vendor-vue-router-GxXeWd4k.js",
+      "src/frontend/templates/unifi-portal/unifi-portal.js",
+      "_main-DE9f1_IK.js",
+      "_unifi-vendor-@vue-BH5BUbdD.js",
+      "_unifi-vendor-pinia-DpOm-O93.js",
+      "_unifi-vendor-jspdf-CB9eJ5jE.js",
+      "_unifi-vendor-core-js-Fli6k-j9.js",
+      "_unifi-vendor-@babel-BgpAVVkQ.js",
+      "_unifi-vendor-fflate-DkrNj-7V.js",
+      "_BaseSelect-CHtD1inW.js",
+      "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
+      "_unifi-vendor-tom-select-Dbt2A7YI.js",
+      "_unifi-vendor-@orchidjs-BHPRxGz6.js",
+      "_BaseCard-CT8UykvB.js",
+      "_unifi-vendor-vue-final-modal-BHQnw4HA.js",
+      "_unifi-vendor-@vueuse-C3CZYosC.js",
+      "_unifi-vendor-focus-trap-DefuGMzh.js",
+      "_unifi-vendor-tabbable-lu-oW8fi.js"
+    ],
+    "css": [
+      "css/ReportLayout-uBcWDTw0.css"
+    ]
+  }
+}
