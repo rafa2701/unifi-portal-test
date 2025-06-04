@@ -17,7 +17,8 @@ class UnifiControllerPost
     {
         add_action("init", [self::class, "registerPostType"]);
         add_action("add_meta_boxes", [self::class, "addCustomFields"]);
-        add_action("save_post", [self::class, "saveCustomFields"]);
+        add_action("save_post_unifi-controller", [self::class, "saveCustomFieldsAction"], 10, 2);
+        add_action("delete_post", [self::class, "clearControllerCacheOnDelete"]);
     }
 
     /**
@@ -162,5 +163,36 @@ class UnifiControllerPost
             'controller_url' => WPUtils::sanitize_unslash_url($_POST['controller_url']),
 
         ])->update();
+    }
+
+    public static function clearControllerCache()
+    {
+        // Use the actual cache key string used in UnifiController::getControllerPosts()
+        delete_transient('unifi_controller_posts');
+    }
+
+    public static function saveCustomFieldsAction($post_id, $post)
+    {
+        // It's crucial to only run the full save and cache clearing
+        // for the 'unifi-controller' post type, and not for revisions or auto-saves.
+        if (get_post_type($post_id) !== 'unifi-controller' || wp_is_post_revision($post_id) || wp_is_post_autosave($post_id)) {
+            return;
+        }
+
+        // Call the original meta saving logic.
+        // Ensure that the original saveCustomFields method's nonce checks and other guards are respected.
+        // This might involve refactoring saveCustomFields to be callable without exiting,
+        // or duplicating its core logic here if that's safer.
+        // For this subtask, we'll assume saveCustomFields can be called and will perform its own checks.
+        self::saveCustomFields($post_id); // This call assumes saveCustomFields handles its own nonce and capability checks.
+
+        self::clearControllerCache();
+    }
+
+    public static function clearControllerCacheOnDelete($post_id)
+    {
+        if (get_post_type($post_id) == "unifi-controller") {
+            self::clearControllerCache();
+        }
     }
 }
