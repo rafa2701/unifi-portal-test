@@ -56,51 +56,7 @@ export default function useUnifiHome() {
       controllerError.value = "";
       showAlert("info", "Loading", "Loading controllers...");
 
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      const response = {
-        status: "success",
-        data: {
-          controllers: [
-            {
-              name: "Thundering Surf UDM-Pro",
-              key: "4g==",
-              system: "modern",
-              sites: ["default"],
-            },
-            {
-              name: "SBSNJ",
-              key: "4w==",
-              system: "legacy",
-              sites: [
-                "default",
-                "d6xnexrb",
-                "xzethxa3",
-                "a07ukd7h",
-                "15tatef9",
-                "lwjr3rse",
-              ],
-            },
-            {
-              name: "Sea Shell Resort",
-              key: "6ws=",
-              system: "modern",
-              sites: ["default"],
-            },
-            {
-              name: "WTI",
-              key: "6ws=2",
-              system: "modern",
-              sites: ["default"],
-            },
-            {
-              name: "Monarch",
-              key: "6ws=3",
-              system: "modern",
-              sites: ["default"],
-            },
-          ],
-        },
-      };
+      const response = await api.fetchControllers();
 
       if (response.status === "success") {
         controllerStore.setControllers(response.data.controllers);
