@@ -1,0 +1,116 @@
+# -*- mode: gitignore; -*-
+
+# Ignore Emacs backup files in all folders
+*~
+\#*\#
+.\#*
+
+# Ignore editor/IDE specific files
+*.sublime-project
+*.sublime-workspace
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore directories for Rust
+/target
+
+# Ruby Lsp
+/.ruby-lsp/
+
+# Ignore directories for Gem
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+
+# Ignore build directories in the root
+/.cache/
+/.build/
+/.dist/
+
+# Ignore `proj` script out directory in the root
+/.proj/
+/.project_template/
+
+# Ignore archive files in the root
+/*.zip
+/*.rar
+/*.tar
+/*.tar.gz
+/*.tar.bz2
+/*.tar.xz
+/*.7z
+/*.gz
+/*.bz2
+/*.xz
+
+# Ignore log files in the root
+/*.log
+/*.logs
+/*.log.*
+/*.logs.*
+
+# Ignore temporary directories in the root
+/.tmp
+/.temp
+
+# Ignore specific directories in the root
+/__*/
+
+# Additional common ignores
+
+# Ignore Node.js dependencies
+/node_modules/
+
+# Ignore Python virtual environments
+/venv/
+/.env/
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore build artifacts
+build/
+out/
+
+# Ignore miscellaneous temporary files and directories
+*.swp
+*.tmp
+*.bak
+*.backup
+*.old
+*.orig
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Ignore Vite Build etc.
+node_modules
+dist-ssr
+*.local
+
+package-lock.json
+.phpactor.json
+.phpunit.result.cache
