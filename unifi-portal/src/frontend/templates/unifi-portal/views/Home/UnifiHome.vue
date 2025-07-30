@@ -89,5 +89,5 @@ export default {
 </script>
 
 <style lang="scss">
-@forward "./UnifiHome.scss";
+@import "./UnifiHome.scss";
 </style>

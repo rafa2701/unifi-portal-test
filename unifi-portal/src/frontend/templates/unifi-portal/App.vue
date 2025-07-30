@@ -21,10 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
-#unifi-portal {
-  min-height: 100vh;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: map.get($font-family, "sans") !important;
-}
+/* Styles removed for build */
 </style>

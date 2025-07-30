@@ -1,0 +1,29 @@
+{
+  "name": "unifi-portal-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "prod": "vite build"
+  },
+  "dependencies": {
+    "axios": "*",
+    "html2pdf.js": "*",
+    "lodash": "*",
+    "lucide-vue-next": "*",
+    "pinia": "*",
+    "tom-select": "*",
+    "vue": "*",
+    "vue-final-modal": "*",
+    "vue-router": "*",
+    "@vueuse/core": "*",
+    "@vueuse/integrations": "*",
+    "focus-trap": "*"
+  },
+  "devDependencies": {
+    "@headlessui/vue": "*",
+    "@vitejs/plugin-vue": "*",
+    "vite": "*",
+    "sass-embedded": "*"
+  }
+}

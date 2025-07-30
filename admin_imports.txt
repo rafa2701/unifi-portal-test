@@ -1,0 +1,58 @@
+unifi-portal/src/admin/templates/unifi-portal/router/index.js:import { createRouter, createWebHashHistory } from "vue-router";
+unifi-portal/src/admin/templates/unifi-portal/services/api/wordpress.js:import { createApiInstance } from "./api";
+unifi-portal/src/admin/templates/unifi-portal/services/api/wordpress.js:import { UNIFI } from "@admin/constants";
+unifi-portal/src/admin/templates/unifi-portal/services/api/api.js:import axios from "axios";
+unifi-portal/src/admin/templates/unifi-portal/services/api/unifi.js:import { createApiInstance } from "./api";
+unifi-portal/src/admin/templates/unifi-portal/services/api/unifi.js:import { UNIFI } from "@admin/constants";
+unifi-portal/src/admin/templates/unifi-portal/services/api/plugin.js:import { createApiInstance } from "./api";
+unifi-portal/src/admin/templates/unifi-portal/services/api/plugin.js:import { UNIFI } from "@admin/constants";
+unifi-portal/src/admin/templates/unifi-portal/services/api/external.js:import { createApiInstance } from "./api";
+unifi-portal/src/admin/templates/unifi-portal/views/SettingsView.vue:import { ref } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/views/SettingsView.vue:import BaseCard from "@admin/components/base/BaseCard.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/SettingsView.vue:import BaseButton from "@admin/components/base/BaseButton.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/SettingsView.vue:import BaseSelect from "@admin/components/base/BaseSelect.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/DocsView.vue:import BaseCard from "@admin/components/base/BaseCard.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/DocsView.vue:import { FileText, MessageCircle, Mail } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/views/AdminView.vue:import { computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/views/AdminView.vue:import { useRouter, useRoute } from "vue-router";
+unifi-portal/src/admin/templates/unifi-portal/views/AdminView.vue:import BaseTab from "@admin/components/base/BaseTab.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/AdminView.vue:import { Home, Server, FileText, Activity, Settings } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/views/HomeView.vue:import BaseCard from "@admin/components/base/BaseCard.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/HomeView.vue:import { Server, FileText, Activity, Settings } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/views/HomeView.vue:import { useRouter } from "vue-router";
+unifi-portal/src/admin/templates/unifi-portal/views/TestView.vue:import { ref } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/views/TestView.vue:import BaseCard from "@admin/components/base/BaseCard.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/TestView.vue:import BaseButton from "@admin/components/base/BaseButton.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/TestView.vue:import BaseSelect from "@admin/components/base/BaseSelect.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/TestView.vue:import { Activity } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/views/ControllerView.vue:import BaseCard from "@admin/components/base/BaseCard.vue";
+unifi-portal/src/admin/templates/unifi-portal/views/ControllerView.vue:import { Plus, List } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/App.vue:import { useProgress } from "@admin/composables/useProgress";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import { createApp } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import { createPinia } from "pinia";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import App from "./App.vue";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import router from "./router";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import "@root/assets/theme/main.scss";
+unifi-portal/src/admin/templates/unifi-portal/unifi-portal.js:import { img } from "./utils/image";
+unifi-portal/src/admin/templates/unifi-portal/composables/useController.js:import { ref, computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/composables/useController.js:import { useControllerStore } from "@admin/stores/controller";
+unifi-portal/src/admin/templates/unifi-portal/composables/useController.js:import { unifiApi } from "@admin/services/api";
+unifi-portal/src/admin/templates/unifi-portal/composables/useSite.js:import { ref, computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/composables/useSite.js:import { useControllerStore } from "@admin/stores/controller";
+unifi-portal/src/admin/templates/unifi-portal/composables/useSite.js:import { unifiApi } from "@admin/services/api";
+unifi-portal/src/admin/templates/unifi-portal/composables/useAlerts.js:import { ref } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/composables/useProgress.js:import { ref, computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/composables/useProgress.js:import { useRouter, useRoute } from "vue-router";
+unifi-portal/src/admin/templates/unifi-portal/stores/controller.js:import { defineStore } from "pinia";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseSelect.vue:import {
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseSelect.vue:import TomSelect from "tom-select";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseSelect.vue:import "tom-select/dist/css/tom-select.css";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseModal.vue:import { VueFinalModal } from "vue-final-modal";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseModal.vue:import { X } from "lucide-vue-next";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseModal.vue:import BaseButton from "./BaseButton.vue";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseButton.vue:import {
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseAlert.vue:import { computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseAlert.vue:import {
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseListbox.vue:import { computed } from "vue";
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseListbox.vue:import {
+unifi-portal/src/admin/templates/unifi-portal/components/base/BaseDisclosure.vue:import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/vue";

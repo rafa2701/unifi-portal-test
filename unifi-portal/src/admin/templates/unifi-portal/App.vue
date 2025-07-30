@@ -38,36 +38,5 @@ export default {
 </script>
 
 <style lang="scss">
-.unifi-portal {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.portal-layout {
-  flex: 1;
-  display: flex;
-
-  .portal-sidebar {
-    width: 20rem;
-    border-right: 1px solid map.get($colors, "slate", 200);
-    background: white;
-  }
-
-  .portal-main {
-    flex: 1;
-    padding: map.get($spacing, "lg");
-    background: map.get($colors, "slate", 50);
-  }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.15s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
+/* Styles removed for build */
 </style>
