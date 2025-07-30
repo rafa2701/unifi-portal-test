@@ -48,44 +48,14 @@ class UnifiPortalController
                 );
 
                 $controller_data[] = [
-                    "name" => esc_html($controller_name),
-                    "key" => Utils::xorEncrypt(strval($controller_id)),
+                    "name" => esc_html($controller_name ?: $controller->post_title),
+                    "key" => esc_html($controller->post_name),
                 ];
             }
 
-            $controllers_static = [
-                "controllers" => [
-                    [
-                        "name" => "Thundering Surf UDM-Pro",
-                        "key" => "4g==",
-                        "system" => "modern",
-                        "sites" => ["default"],
-                    ],
-                    [
-                        "name" => "SBSNJ",
-                        "key" => "4w==",
-                        "system" => "legacy",
-                        "sites" => [
-                            "default",
-                            "d6xnexrb",
-                            "xzethxa3",
-                            "a07ukd7h",
-                            "15tatef9",
-                            "lwjr3rse"
-                        ],
-                    ],
-                    [
-                        "name" => "Sea Shelll Resort",
-                        "key" => "6ws=",
-                        "system" => "modern",
-                        "sites" => ["default"],
-                    ],
-                ],
-            ];
-
             return [
                 "status" => "success",
-                "data" => ["controllers" => $controllers_static],
+                "data" => ["controllers" => $controller_data],
             ];
         } catch (\Exception $e) {
             return [
