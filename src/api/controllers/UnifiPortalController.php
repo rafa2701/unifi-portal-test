@@ -47,9 +47,18 @@ class UnifiPortalController
                     true
                 );
 
+                $unifi_controller = new UnifiController();
+                $unifi_controller->setControllerId($controller_id);
+                $unifi_controller->retrieveControllerDetails();
+                $sites = $unifi_controller->loadAvailableSites();
+
                 $controller_data[] = [
                     "name" => esc_html($controller_name ?: $controller->post_title),
                     "key" => esc_html($controller->post_name),
+                    "sites" => array_map(
+                        fn($site) => $site['name'],
+                        $sites
+                    ),
                 ];
             }
 
