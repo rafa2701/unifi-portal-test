@@ -94,8 +94,8 @@
       "_unifi-vendor-focus-trap-DefuGMzh.js"
     ]
   },
-  "_unifi-vendor-axios-l0sNRNKZ.js": {
-    "file": "js/unifi-vendor-axios-l0sNRNKZ.js",
+  "_unifi-vendor-axios-C0aMl-mx.js": {
+    "file": "js/unifi-vendor-axios-C0aMl-mx.js",
     "name": "unifi-vendor-axios"
   },
   "_unifi-vendor-core-js-Fli6k-j9.js": {
@@ -375,7 +375,7 @@
     ]
   },
   "src/frontend/templates/unifi-portal/unifi-portal.js": {
-    "file": "js/unifi-portal-frontend-txh2-Thw.js",
+    "file": "js/unifi-portal-frontend-Dvb9WYYY.js",
     "name": "unifi-portal-frontend",
     "src": "src/frontend/templates/unifi-portal/unifi-portal.js",
     "isEntry": true,
@@ -389,6 +389,7 @@
       "_BaseCard-CT8UykvB.js",
       "_unifi-vendor-lucide-vue-next-KuQULOd8.js",
       "_unifi-vendor-vue-final-modal-BHQnw4HA.js",
+      "_unifi-vendor-axios-C0aMl-mx.js",
       "_unifi-vendor-core-js-Fli6k-j9.js",
       "_unifi-vendor-@babel-BgpAVVkQ.js",
       "_unifi-vendor-fflate-DkrNj-7V.js",
@@ -417,7 +418,7 @@
     ]
   },
   "src/frontend/templates/unifi-portal/views/Reports/Modern/ModernReport.vue": {
-    "file": "js/ModernReport-CwLrWpgv.js",
+    "file": "js/ModernReport-Bl93nnJv.js",
     "name": "ModernReport",
     "src": "src/frontend/templates/unifi-portal/views/Reports/Modern/ModernReport.vue",
     "isDynamicEntry": true,
@@ -441,6 +442,7 @@
       "_unifi-vendor-@vueuse-C3CZYosC.js",
       "_unifi-vendor-focus-trap-DefuGMzh.js",
       "_unifi-vendor-tabbable-lu-oW8fi.js",
+      "_unifi-vendor-axios-C0aMl-mx.js",
       "_unifi-vendor-html2canvas-S0bfYxZu.js"
     ],
     "css": [
@@ -448,7 +450,7 @@
     ]
   },
   "src/frontend/templates/unifi-portal/views/Reports/ReportLayout.vue": {
-    "file": "js/ReportLayout-DeeboIHF.js",
+    "file": "js/ReportLayout-C5jTyJY0.js",
     "name": "ReportLayout",
     "src": "src/frontend/templates/unifi-portal/views/Reports/ReportLayout.vue",
     "isDynamicEntry": true,
@@ -470,7 +472,8 @@
       "_unifi-vendor-vue-final-modal-BHQnw4HA.js",
       "_unifi-vendor-@vueuse-C3CZYosC.js",
       "_unifi-vendor-focus-trap-DefuGMzh.js",
-      "_unifi-vendor-tabbable-lu-oW8fi.js"
+      "_unifi-vendor-tabbable-lu-oW8fi.js",
+      "_unifi-vendor-axios-C0aMl-mx.js"
     ],
     "css": [
       "css/ReportLayout-uBcWDTw0.css"
