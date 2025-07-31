@@ -74,13 +74,45 @@ export default function useUnifiHome() {
   };
 
   /**
+   * Fetches available sites for a given controller
+   */
+  const fetchSites = async (controllerKey) => {
+    try {
+      sitesLoading.value = true;
+      siteError.value = "";
+      showAlert("info", "Loading", "Loading sites...");
+
+      const response = await api.fetchSites(controllerKey);
+
+      if (response.status === "success") {
+        const controller = controllerStore.controllers.find(
+          (c) => c.key === controllerKey
+        );
+        if (controller) {
+          controller.sites = response.data.sites;
+        }
+        showAlert("success", "Success", "Sites loaded successfully");
+      } else {
+        throw new Error("Failed to load sites");
+      }
+    } catch (error) {
+      console.error("Error loading sites:", error);
+      siteError.value = "Failed to load sites";
+      showAlert("error", "Error", "Failed to load sites");
+    } finally {
+      sitesLoading.value = false;
+    }
+  };
+
+  /**
    * Handles controller selection change
    */
   const handleControllerChange = () => {
     selectedSite.value = "";
+    controllerStore.setSelectedController(selectedController.value);
 
     if (selectedController.value) {
-      controllerStore.setSelectedController(selectedController.value);
+      fetchSites(selectedController.value);
     } else {
       controllerStore.clearSelection();
     }
@@ -89,7 +121,7 @@ export default function useUnifiHome() {
   /**
    * Handles the View Reports button click
    */
-  const handleViewButtonClick = () => {
+  const handleViewButtonClick = async () => {
     if (!canViewReports.value) return;
 
     const controller = controllerStore.controllers.find(
@@ -102,7 +134,22 @@ export default function useUnifiHome() {
     controllerStore.setSelectedSite(selectedSite.value);
     controllerStore.setConnectionState("connected");
 
-    router.push({ name: UNIFI.ROUTES.REPORTS });
+    // Detect system type and navigate to the correct report
+    try {
+      const response = await api.detectSystem(selectedController.value);
+      if (response.status === "success") {
+        const routeName =
+          response.data.system_type === "modern"
+            ? UNIFI.ROUTES.REPORTS_MODERN
+            : UNIFI.ROUTES.REPORTS_LEGACY;
+        router.push({ name: routeName });
+      } else {
+        throw new Error("Failed to detect system type");
+      }
+    } catch (error) {
+      console.error("Error detecting system type:", error);
+      showAlert("error", "Error", "Failed to detect system type");
+    }
   };
 
   onMounted(() => {
